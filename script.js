@@ -58,5 +58,17 @@ function mostraPergunta(){
         mostraResultado();
        return;
     }
-    perguntaAtual =perguntas 
+    perguntaAtual =perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    textoResultado.textContent = "";
+    mostraAlternativas();
 }
+ function mostraAlternativas(){
+    for (const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativa = document.createElement("button");
+        botaoAlternativa.textContent = alternativa.texto;
+        botaoAlternativa.addEventListener("clicki", ()=>
+        respostasSelecionada(alternativa));
+    }
+ }
