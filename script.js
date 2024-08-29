@@ -69,6 +69,19 @@ function mostraPergunta(){
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativa.texto;
         botaoAlternativa.addEventListener("clicki", ()=>
-        respostasSelecionada(alternativa));
+        respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativa);
     }
  }
+ function respostaSelecionada (opcaoSelecionada){
+    const afirmacao = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacao + "";
+    atual++
+    mostraPergunta();
+ }
+ function mostraResultado(){
+    caixaPerguntas.textContent = "Resumindo...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+ }
+mostraPergunta ();
