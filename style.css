@@ -31,10 +31,10 @@ h1{
     padding-bottom: 10px;
 }
 :root{
-    --cor-fundo: #6c9cc7;
-    --cor-principal: #6a74ce ;
-    --cor-secundaria: #5a5a8d;
-    --cor-destaque: #78b1bb;
+    --cor-fundo: #620b94;
+    --cor-principal: #733c92 ;
+    --cor-secundaria: #b071ce;
+    --cor-destaque: #bd78eb;
     --cor-texto: #000202;
 }
 
