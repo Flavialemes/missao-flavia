@@ -34,10 +34,10 @@ div{
     padding-bottom: 10px;
 }
 :root{
-    --cor-fundo: #620b94;
-    --cor-principal: #733c92 ;
-    --cor-secundaria: #b071ce;
-    --cor-destaque: #bd78eb;
+    --cor-fundo: #d2abe9;
+    --cor-principal: #5d078f ;
+    --cor-secundaria: #a711ec;
+    --cor-destaque: #b770c0;
     --cor-texto: #000202;
 }
 
